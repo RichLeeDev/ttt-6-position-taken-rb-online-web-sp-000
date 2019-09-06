@@ -2,7 +2,9 @@
 def position_taken?(array, index)
   if array[index] = "X" || array[index] = "O"
     return true
-    elsif array[index] = "nil" || array[index] = " "
+    elsif array[index] = "nil"
+    return false
+    elsif array[index] = " "
     return false
 end
 end
